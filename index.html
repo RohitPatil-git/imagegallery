@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography Tamplate</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <nav>
+        <p class="logo">PhotoGram <i class="fas fa-camera-retro"></i></p>
+        <i class="fas fa-bars"></i>
+      </nav>
+      <div class="row">
+        <div class="col1">
+          <h1>
+            Photography is <br />
+            the story..
+          </h1>
+
+          <p>
+            They say a picture is worth a thousand words. But I wonder, what
+            else do “they” say? In order to find out I’ve culled together the
+            best quotes on the subject of photography. I hope they inspire you.
+          </p>
+         <ul>
+             <li class="change active"><i class="fas fa-circle "></i></li>
+             <li class="change"><i class="fas fa-circle"></i></li>
+             <li class="change"><i class="fas fa-circle"></i></li>
+         </ul>
+        </div>
+        <div class="col2">
+          <img
+            id="img"
+            src="images/ph2.jpg"
+            alt="PhotoGraph"
+          />
+          
+        </div>
+      </div>
+    </div>
+
+    <script>
+        let img = document.getElementById('img')
+        let btn = document.getElementsByClassName('change')
+      
+
+    btn[0].onclick = () => {
+        img.src="images/ph2.jpg";
+        buttonColor()
+        btn[0].classList.add('active')
+       
+    }
+    btn[1].onclick = () => {
+        img.src="images/ph1.jpg";
+        buttonColor()
+        btn[1].classList.add('active')
+       
+
+        
+    }
+    btn[2].onclick = () => {
+        img.src="images/ph3.jpg";
+        buttonColor()
+        btn[2].classList.add('active')
+        
+
+       
+    }
+
+const buttonColor = () =>{
+  for ( b of btn) {
+    b.classList.remove('active')
+    
+  }
+}
+
+    </script>
+  </body>
+</html>

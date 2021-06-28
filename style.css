@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Castoro', serif;
+    box-sizing: border-box;
+}
+.content{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 6%;
+    padding-right: 6%;
+    background-color: thistle;
+}
+
+nav{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+  
+}
+nav p {
+    color: rgb(78, 73, 23);
+    font-size: 30px;
+}
+.logo{
+    flex: 1;
+    width: 170px;
+    cursor: pointer;
+}
+.fa-bars{
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: large;
+    
+}
+.row{
+    display: flex;
+    background: #fff;
+    width: 100%;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.col1 , .col2{
+    flex-basis: 50%;
+
+}
+.col1{
+    padding: 4% 6%;
+}
+
+.col1 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    color: rgb(206, 99, 99);
+    letter-spacing: 2px;
+
+
+}
+.col1 p {
+    margin: 30px 0px ;
+    color: #777;
+    line-height: 30px;
+    font-size: 20px;
+}
+#img {
+   
+ width: 580px !important;
+ padding:15px 5px
+ 
+}
+
+button{
+    color: white;
+    border-radius:20px;
+    background-color: teal;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+
+ul li{
+    display: inline;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.active{
+    color: red;
+}
+    
